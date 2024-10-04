@@ -23,7 +23,7 @@ formulario.addEventListener('submit', function(event) {
 
 // Función para manejar eventos de la lista (eliminar, marcar completada y tachar)
 ListaTareas.addEventListener('click', function(event) {
-    const li = event.target.closest('li'); // Asegúrate de que se use closest para obtener el li
+    const li = event.target.closest('li');
 
     if (!li) return;
 
@@ -34,7 +34,7 @@ ListaTareas.addEventListener('click', function(event) {
         removeTaskFromLocalStorage(InfoTarea);
         li.remove();
     } else {
-        // Alternar la tarea sin importar dónde se haga clic en el <li>
+        
         toggleTask(casillaAdorno, li, InfoTarea);
     }
 });
@@ -52,8 +52,8 @@ function addTaskToDOM(InfoTarea, completed) {
 
     // Crear un nodo de texto solo para la tarea
     const textNode = document.createElement('span');
-    textNode.textContent = InfoTarea; // Agregar el texto de la tarea al elemento <span>
-    li.appendChild(textNode); // Agregar el <span> al elemento <li>
+    textNode.textContent = InfoTarea; 
+    li.appendChild(textNode);
 
     if (completed) {
         li.classList.add('completed');
