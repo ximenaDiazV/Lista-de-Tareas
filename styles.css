@@ -1,0 +1,121 @@
+/* GENERAL*/
+body {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background-color: #a7d4f7;
+    color: #2f3961;
+    margin: 0;
+    padding: 10px;
+}
+
+/* ENCABEZADO */
+h1 {
+    text-align: center;
+}
+
+/* GIF */
+.titulo-gif {
+    width: 100px;
+    height: auto; 
+    margin-left: 0px;
+    vertical-align: middle; 
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 3px solid #2f3961;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2868a7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1e4e7d;
+}
+
+/* LISTA DE TAREAS */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+li {
+    background-color: white;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* TAREAS COMPLETADAS: fondo gris oscuro, texto blanco*/
+li.completed {
+    background-color: #333;  /* Fondo gris oscuro */
+    color: white;  /* Texto blanco */
+}
+
+li span {
+    flex-grow: 1;
+    text-align: justify;
+    margin: 10px 10px 10px 10px;
+    word-wrap: break-word;
+    width: 100px;
+}
+
+/* Pequeño ajuste */
+li.completed span {
+    text-decoration: line-through; /* Tachado solo para el texto de la tarea */
+}
+
+/* Casilla de verificación de adorno*/
+li input[type="checkbox"] {
+    margin: 10px 10px 10px 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* BOTON ELIMINAR */
+
+li button {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px 10px 10px 10px;
+}
+
+li button:hover {
+    background-color: #a71818;
+}
+
+/* Ajuste de espacio*/
+.icon {
+    margin-left: 8px;
+    vertical-align: middle;
+}
